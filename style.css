@@ -1,0 +1,93 @@
+body {
+  //margin: auto;
+  -ms-content-zooming: none ;
+  overflow: hidden;
+  //border-style: solid;
+  margin: 0;
+
+  background-color: lightGrey;
+}
+
+
+.no-select, .no-select img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none
+}
+
+.toolbar-button{
+  margin-top: 10px;
+  height: 60px;
+  width: 60px;
+
+}
+
+.draw-tool-div {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width:1200px;
+  background-color: purple;
+  //position: relative;
+}
+.draw-tool{
+  //position: absolute;
+  height: 30px;
+  width: 350px;
+  margin: auto;
+
+  //background-color: blue;
+
+}
+
+.canvas-container {
+  background-color: red;
+  left: 0;
+  right: 0;
+  z-index:200;
+  top: 90px;
+}
+#myCanvas{
+  border-style: dashed;
+  border-color: red;
+  position: absolute;
+  //top:90;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  overflow-y: hidden;
+  z-index:200;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+
+}
+
+.iframe-container {
+  background-color: yellow;
+  top: 90px;
+  z-index: 10;
+}
+
+#widget {
+  border-style: dashed;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 1200px;
+  height: 700px;
+  //margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+  z-index: 10;
+}

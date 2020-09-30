@@ -1,0 +1,52 @@
+<!-- This will be just a simple canvas where you can draw on the screen. the canvas should be resopnsive -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>1-100 Chart</title>
+  </head>
+
+  <body onload="InitThis();" width = "1200px" height= "850px">
+
+    <div class="draw-tool-div">
+      <div class="draw-tool">
+        <button type="button" class = "toolbar-button" id ="draw-button">
+          <a href="#" class="fa fa-pencil"></a>
+        </button>
+        <button onclick="use_tool('erase');" type="button" class = "toolbar-button">
+          <a href="#" class="fa fa-eraser"></a>
+        </button>
+        <button type="button" class = "toolbar-button" onclick="clearArea();">
+          <a href="#" class="fa fa-sync"></a>
+        </button>
+        <button type="button" class = "toolbar-button">
+          <a href="#" class="fa fa-mouse-pointer"></a>
+        </button>
+        <button type="button" class = "toolbar-button">
+          <a href="#" class="fa fa-info"></a>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="canvas-container .no-select">
+      <canvas id="myCanvas" height="700px" width="1200px" ></canvas>
+    </div>
+
+    <div class="iframe-container .no-select">
+      <iframe id="widget" src="https://sharonwells.academy/hundred_chart/"></iframe>
+
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/61ea2fdd55.js" crossorigin="anonymous"></script>
+  <script src="script.js" charset="utf-8"></script>
+
+  </body>
+</html>
